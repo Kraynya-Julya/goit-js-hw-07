@@ -11,7 +11,7 @@ function createImagesCardsGallery(galleryItems) {
     return galleryItems.map(({original, preview, description}) =>{
         return `
         <div class="gallery__item">
-        <a class="gallery__link" href="large-image.jpg">
+        <a class="gallery__link" href="${original}">
           <img
             class="gallery__image"
             src="${preview}"
@@ -30,6 +30,6 @@ function onPaletteContainerClick(event) {
         return;
     }
 
-const instance = basicLightbox.create(`<img src="assets/images/image.png" width="800" height="600">') = "${event.target.dataset.source}";
+const instance = basicLightbox.create(`<img src="${event.target.dataset.source}">`;
 instance.show();
 }
