@@ -4,7 +4,7 @@ const galleryContainer = document.querySelector('gallary');
 const cardsGallery = createImagesCardsGallery(galleryItems);
 // console.log(galleryItems);
 
-galleryContainer.insertAdjacentHTML('beforeend', cardsGallery)
+galleryContainer.insertAdjacentHTML('beforeend', cardsGallery);
 galleryContainer.addEventListener('click', onPaletteContainerClick);
 
 function createImagesCardsGallery(galleryItems) {
@@ -30,6 +30,6 @@ function onPaletteContainerClick(event) {
         return;
     }
 
-const instance = basicLightbox.create(`<img src="${event.target.dataset.source}">`)
+const instance = basicLightbox.create(`<img src="${event.target.dataset.source}">`);
 instance.show();
 }
