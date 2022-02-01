@@ -30,6 +30,6 @@ function onPaletteContainerClick(event) {
         return;
     }
 
-const instance = basicLightbox.create(`<img src="${event.target.dataset.source}">`;
+const instance = basicLightbox.create(`<img src="${event.target.dataset.source}">`)
 instance.show();
 }
