@@ -1,6 +1,6 @@
 import { galleryItems } from './gallery-items.js';
 // Change code below this line
-const galleryContainer = document.querySelector('gallary');
+const galleryContainer = document.querySelector('.gallary');
 const cardsGallery = createImagesCardsGallery(galleryItems);
 // console.log(galleryItems);
 
