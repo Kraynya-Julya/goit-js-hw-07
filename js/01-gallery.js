@@ -1,3 +1,4 @@
+import { galleryItems } from './gallery-items.js';
 const galleryContainer = document.querySelector('.gallery');
 const cardsGallery = createImagesCardsGallery(galleryItems);
 // console.log(galleryItems);
